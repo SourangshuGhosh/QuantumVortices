@@ -1,0 +1,46 @@
+! Parameters for time integration
+&ckprst
+nrst = 0   ! Select the field file number for the restart
+sprst = 0  ! Select the spectra file no. 
+strst = 0  ! Select the stspectra fine no.
+/
+&resolution
+Nx=256
+Ny=256
+/
+&fileparam
+nsplit_orignal = 4  !
+nsplit_current = 4  !
+/
+&tparam
+dt_fix=1.0d-3      ! Time step size
+cflmax=0.2d0 ! CFL condition
+maxiter=400000   ! Total no. of time steps.
+fsteps=1000   ! Field output requency
+ssteps=1000     ! Spectra output frequency
+gsteps=100      ! Energy etc. output every
+ststeps=20     ! kpsi 1d-line output frequency
+/
+&fluidparam
+vis=1.125d-2 !
+vis2=0.0d0 !
+nhypvis=4  !
+/
+&forceparam
+f0=0.12d0  !
+kf=1.0d0  !
+Pinj=1.4d0 !
+nfshell=3 !
+/
+&scalarparam
+diff=2.0d-2 !
+diff2=0.0d0 !
+nhypdif=4  !
+GF1_scl1=0.0d0 !
+GF2_scl1=0.0d0 !
+GF3_scl1=0.0d0 !
+sclinjsteps=50000 !
+/
+&RevNSE
+rns_ener_prescrib=0.0d0!
+/

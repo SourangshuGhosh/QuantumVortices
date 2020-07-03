@@ -1,0 +1,11 @@
+a=load('fort.334');
+b=load('fort.335');
+c=load('fort.336');
+d=load('fort.337');
+V=reshape(a,256,64);
+b1=reshape(b,256,64);
+c1=reshape(c,256,64);
+d1=reshape(d,256,64);
+V(1:256,65:128)=b1;
+V(1:256,129:192)=c1;
+V(1:256,193:256)=d1;

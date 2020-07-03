@@ -1,0 +1,45 @@
+! Parameters for GPE
+&gpparam
+xi=1.0d0 !
+csound=1.0d0 !
+rho_avg=1.0d0 !
+disp_factor=0.0d0 !
+/
+&gpforceparam
+famp_gp = 1.0d6  !
+kf1_gp = 12.0d0  !
+kf2_gp = 13.0d0 !
+/
+&gphypvis
+nhypvis1_gp = 8 !
+nhypvis2_gp = 8 !
+vishypo_gp = 0.0d0 !
+vishype_gp = 6.0d-20  !
+friclowk_gp = 0.0d0  !
+/
+&gpfocus
+gstrength = -1.4405061058513697d1 !
+/
+&gpfiniteT
+oneybeta = 1.0d-4 !
+nuN = 5.0d2 !
+chempot0 = 0.00 !
+/
+&gpcounterflow
+vnx = 0.0d0 !
+vny = 0.0d0 !
+/
+&selftruncation
+ktrunc = 4.0d1 !
+/
+&gpparticle
+gp_N_obj = 1 !
+gp_mass_part = 100.0d0 !
+ppotd = 2.0d0    !
+ppotV0 = 10.0d0 !
+ppotthick = 2.0d0 !
+/
+&gpotoc
+k_otoc_gp = 1.8d0 !
+eps_otoc_gp = 1.0d0-4 !
+/
